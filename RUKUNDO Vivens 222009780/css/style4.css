@@ -1,0 +1,40 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('barberWallpaper.jpg'); /* Set background image */
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.6); /* Transparent black background */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .social-media {
+            margin-top: 20px; /* Add space between contact information and social media links */
+        }
+        .social-media a {
+            color: black; /* Black color for social media links */
+            text-decoration: none;
+            margin-right: 10px; /* Add space between social media icons */
+        }

@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--RUKUNDO Vivens_222009780-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event Registration Form</title>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+    <h2>event Registration Form</h2>
+    <form action="ticketForm.php" method="POST">
+        
+       <label for="event_id">event_id:</label>
+        <select id="event_id" name="event_id">
+            <!-- Populate this dropdown with options from your ticket table -->
+             <option value="1">event 1</option>
+            <option value="2">event 2</option>
+            <option value="3">event 3</option>
+            <option value="4">event 4</option>
+            <!-- Add more options as needed -->
+        </select>
+        
+        <label for="type">Type:</label><br>
+        <input type="text" id="type" name="type"><br>
+        
+        <label for="price">Price:</label><br>
+        <input type="text" id="price" name="price"><br>
+        
+        <label for="available">Available:</label><br>
+        <input type="text" id="available" name="available"><br>
+        
+        <button type="submit" name="create">Create</button>
+    </form>
+  <h2>Update,Delete and Read of data </h2>
+     <form method="post" action="crudticket.php">
+                    <input type="number" name="ticket_id" placeholder=" New ticket_id"><br>
+                     <select id="newevent_id" name="newevent_id">
+            <!-- Populate this dropdown with options from your ticket table -->
+            <option value="1">event 1</option>
+            <option value="2">event 2</option>
+            <option value="3">event 3</option>
+            <option value="4">event 4</option>
+            <!-- Add more options as needed -->
+        </select>
+                    <input type="text" name="newtype" placeholder="New type"><br>
+                    <input type="text" name="newprice" placeholder="New price"><br>
+                    <input type="text" name="newavailable" placeholder="New available"><br>
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">Read</button>
+                </form>
+</body>
+</html>

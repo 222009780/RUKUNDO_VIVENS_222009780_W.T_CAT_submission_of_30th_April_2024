@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--RUKUNDO Vivens_222009780-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration Form</title>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+    <h2>Customer Registration Form</h2>
+    <form action="customerform.php" method="POST">
+        
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="first_name" name="first_name"><br>
+        
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="last_name" name="last_name"><br>
+        
+        <label for="phone">Phone:</label><br>
+        <input type="text" id="phone" name="phone"><br>
+        
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address"><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+        
+        <button type="submit" name="create">Create</button>
+    </form>
+  <h2>Update,Delete and Read of data </h2>
+     <form method="post" action="crudcustomer.php">
+                    <input type="number" name="customer_id" placeholder=" New customer_id"><br>
+                    <input type="text" name="newlast_name" placeholder="New last name"><br>
+                    <input type="text" name="newfirst_name" placeholder="New first name"><br>
+                    <input type="text" name="newphone" placeholder="New phone"><br>
+                    <input type="text" name="newaddress" placeholder="New address"><br>
+                    <input type="email" name="newemail" placeholder="New email"><br>
+                    <input type="password" name="newpassword" placeholder="New password"><br>
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">Read</button>
+                </form>
+</body>
+</html>

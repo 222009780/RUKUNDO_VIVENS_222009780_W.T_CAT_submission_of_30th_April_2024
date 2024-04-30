@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+     <link rel="stylesheet" href="css/style3.css">
+     
+</head>
+<!--RUKUNDO Vivens_222009780-->
+<body>
+    <h2>Booking</h2>
+    <form action="bookingform.php" method="post">
+        <label for="customer_id">CustomerID:</label>
+        <select id="customer_id" name="customer_id">
+            <!-- Populate this dropdown with options from your customer table -->
+            <option value="1">Customer 1</option>
+            <option value="2">Customer 2</option>
+            <option value="3">Customer 3</option>
+            <option value="4">Customer 4</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+
+        <label for="number_of_tickets">Number of Tickets:</label>
+        <input type="number" id="number_of_tickets" name="number_of_tickets" max="50">
+
+        
+        <label for="ticket_id">TicketID:</label>
+        <select id="ticket_id" name="ticket_id">
+            <!-- Populate this dropdown with options from your ticket table -->
+            <option value="1">Ticket 1</option>
+            <option value="2">Ticket 2</option>
+            <option value="3">Ticket 3</option>
+            <option value="4">Ticket 4</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

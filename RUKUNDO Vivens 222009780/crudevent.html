@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event Registration Form</title>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<!--RUKUNDO Vivens_222009780-->
+<body>
+    <h2>event Registration Form</h2>
+    <form action="eventform.php" method="POST">
+        
+        <label for="Name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        
+        <label for="date">Date:</label><br>
+        <input type="date" id="date" name="date"><br>
+        
+        <label for="description">description:</label><br>
+        <input type="text" id="description" name="description"><br>
+        
+        <label for="category">category:</label><br>
+        <input type="text" id="category" name="category"><br>
+
+        
+        <button type="submit" name="create">Create</button>
+    </form>
+  <h2>Update,Delete and Read of data </h2>
+     <form method="post" action="crudevent.php">
+                    <input type="number" name="event_id" placeholder=" New event_id"><br>
+                    <input type="text" name="newname" placeholder="New name"><br>
+                    <input type="date" name="newdate" placeholder="New date"><br>
+                    <input type="description" name="newdescription" placeholder="New description"><br>
+                    <input type="text" name="newcategory" placeholder="New category"><br>
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">Read</button>
+                </form>
+</body>
+</html>

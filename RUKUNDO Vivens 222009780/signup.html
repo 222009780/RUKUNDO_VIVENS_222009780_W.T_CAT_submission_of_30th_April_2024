@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up</title>
+     <link rel="stylesheet" href="css/style3.css">
+    <script type="text/javascript" src="javascript.js"></script>
+</head>
+<body>
+    <center>
+        <header><u><b>FORM OF REGISTRATION</b></u></header>
+    </center>
+    <center>
+        <form action="customerform.php" method="POST">
+            <table id="table1">
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="first_name" id="first" oninput="validate()"></td>
+                    <td><div id="errorFirst"></div></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" name="last_name" id="last" oninput="validate()"></td>
+                    <td><div id="errorLast"></div></td>
+                </tr>
+                <tr>
+                    <td>Phone:</td>
+                    <td><input type="text" name="phone" id="phone" oninput="validate()"></td>
+                    <td><div id="errorphone"></div></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><input type="text" name="address" id="address" oninput="validate()"></td>
+                    <td><div id="erroraddress"></div></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email" id="email" oninput="validate()"></td>
+                    <td><div id="erroremail"></div></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password" id="pass" oninput="validate()"></td>
+                    <td><div id="errorpassword"></div></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><button type="submit" name="create" onclick="validate(); finalValidate();">Create</button></td>
+                    <td><div id="errorfinal"></div></td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>

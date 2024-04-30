@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--RUKUNDO Vivens_222009780-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event Registration Form</title>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+    <h2>event Registration Form</h2>
+     <form action="venueForm.php" method="POST">
+        
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="capacity">Capacity:</label><br>
+        <input type="number" id="capacity" name="capacity" required><br><br>
+
+        <label for="contact_person">Contact Person:</label><br>
+        <input type="text" id="contact_person" name="contact_person" required><br><br>
+        
+        <button type="submit" name="create">Create</button>
+    </form>
+  <h2>Update,Delete and Read of data </h2>
+     <form method="post" action="crudvenue.php">
+                    <input type="number" name="venue_id" placeholder=" New Venue_id"><br>
+                    <input type="text" name="newname" placeholder="New name"><br>
+                    <input type="text" name="newaddress" placeholder="New address"><br>
+                    <input type="description" name="newcapacity" placeholder="New capacity"><br>
+                    <input type="text" name="newcontact_person" placeholder="New contact_person"><br>
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">Read</button>
+                </form>
+</body>
+</html>
